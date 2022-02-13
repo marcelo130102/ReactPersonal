@@ -7,7 +7,7 @@ export function MovieCard({movie}){
         <li className = {styles.MovieCard}>
             <Link to={"/movies/" + movie.id}>
                 <img 
-                class Name = {styles.MovieImage} 
+                className = {styles.MovieImage} 
                 src = {imgUrl} 
                 alt = {movie.tittle} 
                 width = {230} 

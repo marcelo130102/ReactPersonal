@@ -1,11 +1,14 @@
 .detailsContainer{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .col{
     max-width: 400px;
     margin: 15px;
+    height: auto;
+    height: 80%;
 }
 
 .movieImage {
@@ -15,4 +18,8 @@
 
 .movieDetails{
     font-size: 1.5rem;
+}
+
+.firstItem{
+    margin-top: 0;
 }
