@@ -1,5 +1,9 @@
 import { MoviesGrid } from "./MoviesGrid";
+import { Search } from "./Search";
 
 export function LandingPage(){
-    return <MoviesGrid/>
+    return <div>
+        <Search/>
+        <MoviesGrid/>
+    </div>
 }
