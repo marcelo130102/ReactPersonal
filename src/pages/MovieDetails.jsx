@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { get } from '../utilities/httpClient'
 import { useEffect, useState } from 'react';
 import { Spinner } from '../components/Spinner';
+import { getImage } from '../utilities/getImage';
 
 export function MovieDetails(){
     const {movieId} = useParams();
@@ -20,8 +21,8 @@ export function MovieDetails(){
     if(isLoading) {
         return <Spinner/>;
     }
-
-    const imgUrl = "https://image.tmdb.org/t/p/w300" + movie.poster_path; 
+    
+    const imgUrl = getImage(movie.poster_path, 500); 
 
     return <div className={styles.detailsContainer}>
                 

@@ -1,4 +1,3 @@
-import {MoviesGrid} from './components/MoviesGrid';
 import styles from './css/App.module.css';
 import {MovieDetails} from './pages/MovieDetails'
 import {
